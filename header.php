@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package _s
+ * @package og_s
  */
 
 ?><!DOCTYPE html>
@@ -24,9 +24,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php _s_include_svg_definitions(); ?>
+<?php og_s_include_svg_definitions(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'og_s' ); ?></a>
 
 	<?php wds_page_builder_area( 'hero' ); ?>
 
@@ -47,7 +47,7 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu"><?php esc_html_e( 'Primary Menu', 'og_s' ); ?></button>
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'primary',

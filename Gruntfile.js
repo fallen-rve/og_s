@@ -264,7 +264,7 @@ module.exports = function(grunt) {
 				options: {
 					cwd: '',
 					domainPath: 'languages/',
-					potFilename: '_s.pot',
+					potFilename: 'og_s.pot',
 					type: 'wp-theme'
 				}
 			}

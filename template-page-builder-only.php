@@ -2,7 +2,7 @@
 /**
  * Template Name: Page Builder Only
  *
- * @package _s
+ * @package og_s
  */
 
 get_header(); ?>
