@@ -1,7 +1,7 @@
 // 30. Table
 // ---------
 
-$table-background: $white;
+$table-background: $color-soft-black;
 $table-color-scale: 5%;
 $table-border: 1px solid smart-scale($table-background, $table-color-scale);
 $table-padding: rem-calc(8 10 10);

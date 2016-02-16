@@ -21,6 +21,15 @@
 $color-blue: #21759b;
 $color-light-yellow: #fff9c0;
 
+$primary-color: #2199e8;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+
 // Social Media Colors
 $color-facebook: #3b5998;
 $color-googleplus: #dd4b39;
@@ -55,6 +64,8 @@ $social-colors: (
 // Black & White
 $color-black: #000000;
 $color-white: #ffffff;
+$black: #0a0a0a;
+$white: #fefefe;
 
 // Grayscale
 $color-gray: #808080;
@@ -76,6 +87,8 @@ $color-background-body: $color-white;
 $color-text-main: $color-cod-gray;
 $color-background-hr: $color-silver;
 $color-border-abbr: $color-dove-gray;
+$body-background: $color-soft-black;
+$body-font-color: $color-soft-black;
 
 // Accessibility
 $color-background-screen-reader: $color-whitesmoke;
