@@ -28,7 +28,6 @@
     "tests"
   ],
   "dependencies": {
-    "bourbon": "latest",
-    "neat": "latest"
+    "foundation-sites": "latest"
   }
 }

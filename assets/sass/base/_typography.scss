@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-	color: $color-text-main;
+	color: $medium-gray;
 	font-family: $font-sans;
 	line-height: $line-height-body;
 }
@@ -47,7 +47,7 @@ h6,
 // Copy
 
 p {
-	margin: 0 0 rem(24) 0;
+	margin: 0 0 rem-calc(24) 0;
 }
 
 b,
@@ -64,7 +64,7 @@ i {
 
 blockquote,
 q {
-	margin: 0 rem(24);
+	margin: 0 rem-calc(24);
 	quotes: "" "";
 
 	&:before,
@@ -74,17 +74,17 @@ q {
 }
 
 address {
-	margin: 0 0 rem(24) 0;
+	margin: 0 0 rem-calc(24) 0;
 }
 
 pre {
 	font-family: $font-pre;
-	font-size: rem(15);
+	font-size: rem-calc(15);
 	line-height: $line-height-pre;
-	margin: 0 0 rem(24);
+	margin: 0 0 rem-calc(24);
 	max-width: 100%;
 	overflow: auto;
-	padding: rem(24);
+	padding: rem-calc(24);
 }
 
 code,
@@ -92,7 +92,7 @@ kbd,
 tt,
 var {
 	font-family: $font-code;
-	font-size: rem(15);
+	font-size: rem-calc(15);
 }
 
 abbr,

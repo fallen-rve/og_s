@@ -3,7 +3,6 @@
 //--------------------------------------------------------------
 
 // Links
-
 a {
 	color: $color-link;
 
@@ -18,13 +17,57 @@ a {
 	}
 }
 
-// Default menu (active after a fresh WordPress install)
+// Navicon menu
+.menu-toggle {
+	display: block;
 
+	.icon {
+
+
+		display: inline-block;
+		fill: $color-white;
+		margin-right: rem-calc(5);
+		vertical-align: middle;
+	}
+
+	.menu-toggle-text {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	@include breakpoint(small) {
+		display: none;
+	}
+}
+
+// Main navigation container
+.main-navigation {
+	@include size(100% auto);
+
+	clear: both;
+	display: block;
+	float: left;
+
+	// Menu area
+	ul {
+		display: none;
+
+		@include breakpoint(small) {
+			display: block;
+		}
+	}
+
+	&.toggled ul {
+		display: block;
+	}
+}
+
+// Menu defaults
 .menu {
 	@include list-reset;
 
 	li {
-		margin: 0 rem(10) 0 0;
+		margin: 0 rem-calc(10) 0 0;
 	}
 
 	ul {
@@ -45,7 +88,7 @@ a {
 		}
 
 		a {
-			padding: rem(10);
+			padding: rem-calc(10);
 			border-bottom: 1px solid $color-background-hr;
 		}
 	}
@@ -78,7 +121,7 @@ a {
 
 			// Sub-menu links
 			a {
-				@include size(rem(200) auto);
+				@include size(rem-calc(200) auto);
 			}
 
 			:hover > a,
@@ -119,43 +162,13 @@ a {
 	}
 }
 
-// Main navigation (after creating a menu in the dashboard)
-.main-navigation {
-	@include size(100% auto);
-
-	clear: both;
-	display: block;
-	float: left;
-
-	// Menu area
-	ul {
-		display: none;
-
-		@include media($phone-landscape) {
-			display: block;
-		}
-	}
-
-	&.toggled ul {
-		display: block;
-	}
-}
-
-// Small menu
-.menu-toggle {
-	display: block;
-
-	@include media($phone-landscape) {
-		display: none;
-	}
-}
-
+// Other navigation
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 rem(24) 0;
+		margin: 0 0 rem-calc(24) 0;
 		overflow: hidden;
 	}
 

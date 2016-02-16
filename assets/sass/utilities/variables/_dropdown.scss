@@ -1,0 +1,13 @@
+// 16. Dropdown
+// ------------
+
+$dropdown-padding: 1rem;
+$dropdown-border: 1px solid $medium-gray;
+$dropdown-font-size: 16rem;
+$dropdown-width: 300px;
+$dropdown-radius: $global-radius;
+$dropdown-sizes: (
+  tiny: 100px,
+  small: 200px,
+  large: 400px,
+);

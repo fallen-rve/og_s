@@ -9,7 +9,7 @@
 	text-align: center;
 
 	// After 1024px, let's float and text align left
-	@include media($tablet-landscape) {
+	@include breakpoint(medium) {
 		float: left;
 		text-align: left;
 	}
@@ -17,7 +17,7 @@
 	// Each icon <li>
 	.social-icon {
 		display: inline-block;
-		margin-right: rem(12);
+		margin-right: rem-calc(12);
 		vertical-align: top;
 
 		// Loop through all social icons
@@ -25,7 +25,7 @@
 
 			// Set styles on those social icons!
 			.icon-#{$social-color} {
-				@include size(rem(24) rem(24));
+				@include size(rem-calc(24) rem-calc(24));
 
 				fill: $color-white;
 

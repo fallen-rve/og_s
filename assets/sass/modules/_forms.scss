@@ -19,7 +19,7 @@ input[type="submit"] {
 	border: none;
 	border-radius: 0;
 	color: $color-white;
-	min-height: rem(31);
+	min-height: rem-calc(31);
 	vertical-align: top;
 	-webkit-appearance: none; // Remove iOS styles
 
@@ -71,7 +71,7 @@ textarea {
 	border: 1px solid $color-border-input;
 	border-radius: 0;
 	line-height: 1.45;
-	padding: rem(3) rem(5);
+	padding: rem-calc(3) rem-calc(5);
 	-webkit-appearance: none; // Remove iOS styles
 
 	&:focus {

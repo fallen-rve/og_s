@@ -22,7 +22,7 @@ img {
 
 // Captions
 .wp-caption {
-	margin: 0 0 rem(24) 0;
+	margin: 0 0 rem-calc(24) 0;
 	max-width: 100%;
 
 	img[class*="wp-image-"] {
@@ -32,21 +32,21 @@ img {
 
 	// Add auto margins so image is centered
 	&.aligncenter {
-		margin: 0 auto rem(24) auto;
+		margin: 0 auto rem-calc(24) auto;
 	}
 
 	// Add a margin right to left-aligned images with captions
 	&.alignleft {
-		margin-right: rem(24);
+		margin-right: rem-calc(24);
 	}
 
 	// Add a margin left to right-aligned images with captions
 	&.alignright {
-		margin-left: rem(24);
+		margin-left: rem-calc(24);
 	}
 
 	.wp-caption-text {
-		margin: rem(12) 0;
+		margin: rem-calc(12) 0;
 	}
 }
 
@@ -57,7 +57,7 @@ img {
 // Galleries
 
 .gallery {
-	margin: 0 0 rem(24) 0;
+	margin: 0 0 rem-calc(24) 0;
 }
 
 .gallery-item {

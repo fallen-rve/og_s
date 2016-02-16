@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 
 .comments-title {
-	font-size: rem(24);
+	font-size: rem-calc(24);
 }
 
 .comment-list {
@@ -12,11 +12,11 @@
 }
 
 .comment-meta {
-	margin: 0 0 rem(14) 0;
+	margin: 0 0 rem-calc(14) 0;
 }
 
 .avatar {
-	margin: 0 rem(10) 0 0;
+	margin: 0 rem-calc(10) 0 0;
 
 	float: left;
 }

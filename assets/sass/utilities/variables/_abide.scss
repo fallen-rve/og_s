@@ -1,0 +1,10 @@
+// 6. Abide
+// --------
+
+$abide-inputs: true;
+$abide-labels: true;
+$input-background-invalid: $alert-color;
+$form-label-color-invalid: $alert-color;
+$input-error-color: $alert-color;
+$input-error-font-size: rem-calc(12);
+$input-error-font-weight: $global-weight-bold;

@@ -1,0 +1,18 @@
+// 11. Button
+// ----------
+
+$button-padding: 0.85em 1em;
+$button-margin: 0 0 $global-margin 0;
+$button-fill: solid;
+$button-background: $primary-color;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-color: #fff;
+$button-color-alt: #000;
+$button-radius: $global-radius;
+$button-sizes: (
+  tiny: 0.6rem,
+  small: 0.75rem,
+  default: 0.9rem,
+  large: 1.25rem,
+);
+$button-opacity-disabled: 0.25;

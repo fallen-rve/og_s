@@ -5,7 +5,7 @@
 // Posts and pages
 
 .entry-title {
-	font-size: rem(36);
+	font-size: rem-calc(36);
 }
 
 .sticky {
@@ -13,7 +13,7 @@
 }
 
 .hentry {
-	margin: 0 0 rem(24) 0;
+	margin: 0 0 rem-calc(24) 0;
 }
 
 .byline,
@@ -29,17 +29,17 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: rem(24) 0 0;
+	margin: rem-calc(24) 0 0;
 }
 
 .page-links {
-	margin: 0 0 rem(24) 0;
+	margin: 0 0 rem-calc(24) 0;
 
 	clear: both;
 }
 
 .edit-link {
-	margin: 0 rem(24);
+	margin: 0 rem-calc(24);
 }
 
 // Asides

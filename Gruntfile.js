@@ -87,8 +87,7 @@ module.exports = function(grunt) {
 				sourceComments: true,
 				sourceMap: true,
 				includePaths: [
-					'assets/bower_components/bourbon/app/assets/stylesheets',
-					'assets/bower_components/neat/app/assets/stylesheets'
+					'assets/bower_components/foundation-sites/sass',
 				]
 			},
 			dist: {
@@ -296,9 +295,8 @@ module.exports = function(grunt) {
 		sassdoc: {
 			default: {
 				src: [
-					'sass/**/*.scss',
-					'assets/bower_components/bourbon/app/assets/stylesheets',
-					'assets/bower_components/neat/app/assets/stylesheets'
+					//'assets/scss/**/*.scss',
+					'assets/bower_components/foundation-sites/foundation-docs'
 				],
 				options: {
 					dest: './sassdoc/',

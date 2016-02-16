@@ -1,0 +1,11 @@
+// 34. Tooltip
+// -----------
+
+$tooltip-background-color: $black;
+$tooltip-color: $white;
+$tooltip-padding: 0.75rem;
+$tooltip-font-size: $small-font-size;
+$tooltip-pip-width: 0.75rem;
+$tooltip-pip-height: $tooltip-pip-width * 0.866;
+$tooltip-pip-offset: 1.25rem;
+$tooltip-radius: $global-radius;

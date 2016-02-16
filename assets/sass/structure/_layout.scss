@@ -5,40 +5,30 @@
 // Structure
 
 .wrap {
-	@include outer-container;
 
-	padding: 0 2*$gutter;
-
-	@include media($desktop) {
-		padding: 0;
-	}
 }
 
 .site-header,
 .site-footer {
-	padding: 0 2*$gutter;
+
 }
 
 .site-content {
-	margin: rem(20) auto;
 
-	@include media($desktop) {
-		margin: rem(40) auto rem(60);
-	}
 }
 
 .primary {
-	@include fill-parent;
+    @include grid-column(8);
 
-	@include media($tablet-landscape) {
-		@include span-columns(8);
-	}
+    @include breakpoint(medium down) {
+        @include grid-column(12);
+    }
 }
 
 .secondary {
-	@include fill-parent;
+    @include grid-column(4);
 
-	@include media($tablet-landscape) {
-		@include span-columns(4);
-	}
+    @include breakpoint(medium down) {
+        @include grid-column(12);
+    }
 }

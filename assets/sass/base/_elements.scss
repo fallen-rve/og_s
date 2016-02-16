@@ -15,7 +15,7 @@ hr {
 
 	background-color: $color-background-hr;
 	border: 0;
-	margin: 0 0 rem(24) 0;
+	margin: 0 0 rem-calc(24) 0;
 }
 
 figure {
@@ -26,7 +26,7 @@ figure {
 
 ul,
 ol {
-	margin: 0 0 rem(48) rem(24);
+	margin: 0 0 rem-calc(48) rem-calc(24);
 }
 
 ul {
@@ -39,7 +39,7 @@ ol {
 
 li > ul,
 li > ol {
-	margin: 0 0 0 rem(24);
+	margin: 0 0 0 rem-calc(24);
 }
 
 dt {
@@ -47,7 +47,7 @@ dt {
 }
 
 dd {
-	margin: 0 rem(24) rem(24) 0;
+	margin: 0 rem-calc(24) rem-calc(24) 0;
 }
 
 // Tables
@@ -55,7 +55,7 @@ dd {
 table {
 	@include size(100% auto);
 	
-	margin: 0 0 rem(24) 0;
+	margin: 0 0 rem-calc(24) 0;
 }
 
 th {
