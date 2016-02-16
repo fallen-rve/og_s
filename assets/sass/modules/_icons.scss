@@ -27,7 +27,7 @@
 			.icon-#{$social-color} {
 				@include size(rem-calc(24) rem-calc(24));
 
-				fill: $color-white;
+				fill: $white;
 
 				&:hover {
 					fill: $color;

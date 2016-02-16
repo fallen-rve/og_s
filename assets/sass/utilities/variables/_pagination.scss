@@ -3,7 +3,7 @@
 
 $pagination-font-size: rem-calc(14);
 $pagination-margin-bottom: $global-margin;
-$pagination-item-color: $color-soft-black;
+$pagination-item-color: $black;
 $pagination-item-padding: rem-calc(3 10);
 $pagination-item-spacing: rem-calc(1);
 $pagination-radius: $global-radius;
@@ -11,6 +11,6 @@ $pagination-item-background-hover: $light-gray;
 $pagination-item-background-current: $primary-color;
 $pagination-item-color-current: foreground($pagination-item-background-current);
 $pagination-item-color-disabled: $medium-gray;
-$pagination-ellipsis-color: $color-soft-black;
+$pagination-ellipsis-color: $black;
 $pagination-mobile-items: false;
 $pagination-arrows: true;

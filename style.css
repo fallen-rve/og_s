@@ -494,8 +494,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
-  background: #fefefe;
+  color: #000000;
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1275,16 +1275,16 @@ cite:before {
 
 /* line 415, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/typography/_base.scss */
 abbr {
-  color: #0a0a0a;
+  color: #000000;
   cursor: help;
-  border-bottom: 1px dotted #0a0a0a;
+  border-bottom: 1px dotted #000000;
 }
 
 /* line 422, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/typography/_base.scss */
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: normal;
-  color: #0a0a0a;
+  color: #000000;
   background-color: #e6e6e6;
   border: 1px solid #cacaca;
   padding: 0.125rem 0.3125rem 0.0625rem;
@@ -1295,7 +1295,7 @@ kbd {
   padding: 0.125rem 0.25rem 0;
   margin: 0;
   background-color: #e6e6e6;
-  color: #0a0a0a;
+  color: #000000;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
 }
 
@@ -1559,7 +1559,7 @@ p + .stat {
   width: 0;
   height: 0;
   border: inset 0.4em;
-  border-color: #fefefe transparent transparent;
+  border-color: #ffffff transparent transparent;
   border-top-style: solid;
   position: relative;
   top: 0.4em;
@@ -1587,9 +1587,9 @@ textarea {
   margin: 0 0 1rem;
   font-family: inherit;
   font-size: 1rem;
-  color: #0a0a0a;
-  background-color: #fefefe;
-  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   -webkit-appearance: none;
@@ -1600,7 +1600,7 @@ textarea {
 [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus,
 textarea:focus {
   border: 1px solid #8a8a8a;
-  background-color: #fefefe;
+  background-color: #ffffff;
   outline: none;
   box-shadow: 0 0 5px #cacaca;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
@@ -1672,7 +1672,7 @@ label {
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 1.8;
-  color: #0a0a0a;
+  color: #000000;
 }
 
 /* line 44, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/forms/_label.scss */
@@ -1720,7 +1720,7 @@ label.middle {
   height: 100%;
   padding: 0 1rem;
   background: #e6e6e6;
-  color: #0a0a0a;
+  color: #000000;
   border: 1px solid #cacaca;
 }
 
@@ -1777,7 +1777,7 @@ legend {
 
 /* line 30, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/forms/_fieldset.scss */
 .fieldset legend {
-  background: #fefefe;
+  background: #ffffff;
   padding: 0 0.1875rem;
   margin: 0;
   margin-left: -0.1875rem;
@@ -1792,8 +1792,8 @@ select {
   font-size: 1rem;
   font-family: inherit;
   line-height: normal;
-  color: #0a0a0a;
-  background-color: #fefefe;
+  color: #000000;
+  background-color: #ffffff;
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1917,7 +1917,7 @@ select[multiple] {
 /* line 98, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_accordion.scss */
 .accordion {
   list-style-type: none;
-  background: #fefefe;
+  background: #ffffff;
   border: 1px solid #e6e6e6;
   border-radius: 0;
   margin-left: 0;
@@ -1963,7 +1963,7 @@ select[multiple] {
   padding: 1rem;
   display: none;
   border-bottom: 1px solid #e6e6e6;
-  background-color: #fefefe;
+  background-color: #ffffff;
 }
 
 /* line 15, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_accordion-menu.scss */
@@ -2003,31 +2003,31 @@ select[multiple] {
   text-align: center;
   border-radius: 50%;
   background: #2199e8;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 48, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_badge.scss */
 .badge.secondary {
   background: #777;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 48, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_badge.scss */
 .badge.success {
   background: #3adb76;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 48, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_badge.scss */
 .badge.alert {
   background: #ec5840;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 48, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_badge.scss */
 .badge.warning {
   background: #ffae00;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 87, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_breadcrumbs.scss */
@@ -2050,7 +2050,7 @@ select[multiple] {
 /* line 48, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_breadcrumbs.scss */
 .breadcrumbs li {
   float: left;
-  color: #0a0a0a;
+  color: #000000;
   font-size: 0.6875rem;
   cursor: default;
   text-transform: uppercase;
@@ -2107,7 +2107,7 @@ select[multiple] {
 
 /* line 39, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_button-group.scss */
 .button-group .button:not(:last-child) {
-  border-right: 1px solid #fefefe;
+  border-right: 1px solid #ffffff;
 }
 
 /* line 99, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_button-group.scss */
@@ -2217,10 +2217,10 @@ select[multiple] {
 .callout {
   margin: 0 0 1rem 0;
   padding: 1rem;
-  border: 1px solid rgba(10, 10, 10, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 0;
   position: relative;
-  color: #0a0a0a;
+  color: #000000;
   background-color: white;
 }
 
@@ -2293,7 +2293,7 @@ select[multiple] {
 
 /* line 51, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_close-button.scss */
 .close-button:hover, .close-button:focus {
-  color: #0a0a0a;
+  color: #000000;
 }
 
 /* line 27, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_drilldown.scss */
@@ -2310,7 +2310,7 @@ select[multiple] {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background: #fefefe;
+  background: #ffffff;
   transition: -webkit-transform 0.15s linear;
   transition: transform 0.15s linear;
   transition: transform 0.15s linear, -webkit-transform 0.15s linear;
@@ -2367,7 +2367,7 @@ select[multiple] {
 
 /* line 55, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_dropdown.scss */
 .dropdown-pane {
-  background-color: #fefefe;
+  background-color: #ffffff;
   border: 1px solid #cacaca;
   display: block;
   padding: 1rem;
@@ -2490,7 +2490,7 @@ select[multiple] {
   left: 100%;
   min-width: 200px;
   z-index: 1;
-  background: #fefefe;
+  background: #ffffff;
   border: 1px solid #cacaca;
   margin-top: -1px;
 }
@@ -2582,31 +2582,31 @@ select[multiple] {
   cursor: default;
   border-radius: 0;
   background: #2199e8;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 49, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_label.scss */
 .label.secondary {
   background: #777;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 49, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_label.scss */
 .label.success {
   background: #3adb76;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 49, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_label.scss */
 .label.alert {
   background: #ec5840;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 49, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_label.scss */
 .label.warning {
   background: #ffae00;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 54, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_media-object.scss */
@@ -2800,14 +2800,14 @@ body {
 .off-canvas-content,
 .off-canvas-content {
   min-height: 100%;
-  background: #fefefe;
+  background: #ffffff;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   z-index: 1;
-  box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* line 80, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_off-canvas.scss */
@@ -2818,7 +2818,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(254, 254, 254, 0.25);
+  background: rgba(255, 255, 255, 0.25);
   cursor: pointer;
   transition: background 0.5s ease;
 }
@@ -2914,8 +2914,8 @@ body {
   width: 100%;
   padding: 1rem;
   margin-bottom: 0;
-  color: #fefefe;
-  background-color: rgba(10, 10, 10, 0.5);
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* line 176, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_orbit.scss */
@@ -2926,7 +2926,7 @@ body {
           transform: translateY(-50%);
   z-index: 10;
   padding: 1rem;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 156, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/util/_mixins.scss */
@@ -2936,7 +2936,7 @@ body {
 
 /* line 108, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_orbit.scss */
 .orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
-  background-color: rgba(10, 10, 10, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* line 180, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_orbit.scss */
@@ -3015,7 +3015,7 @@ body {
 /* line 87, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_pagination.scss */
 .pagination a,
 .pagination button {
-  color: #0a0a0a;
+  color: #000000;
   display: block;
   padding: 0.1875rem 0.625rem;
   border-radius: 0;
@@ -3031,7 +3031,7 @@ body {
 .pagination .current {
   padding: 0.1875rem 0.625rem;
   background: #2199e8;
-  color: #fefefe;
+  color: #ffffff;
   cursor: default;
 }
 
@@ -3051,7 +3051,7 @@ body {
 .pagination .ellipsis::after {
   content: '…';
   padding: 0.1875rem 0.625rem;
-  color: #0a0a0a;
+  color: #000000;
 }
 
 /* line 144, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_pagination.scss */
@@ -3123,7 +3123,7 @@ body {
   margin: 0;
   font-size: 0.75rem;
   font-weight: bold;
-  color: #fefefe;
+  color: #ffffff;
   white-space: nowrap;
 }
 
@@ -3284,7 +3284,7 @@ body.is-reveal-open {
   left: 0;
   right: 0;
   z-index: 1005;
-  background-color: rgba(10, 10, 10, 0.45);
+  background-color: rgba(0, 0, 0, 0.45);
   overflow-y: scroll;
 }
 
@@ -3295,7 +3295,7 @@ body.is-reveal-open {
   padding: 1rem;
   border: 1px solid #cacaca;
   margin: 100px auto 0;
-  background-color: #fefefe;
+  background-color: #ffffff;
   border-radius: 0;
   position: absolute;
   overflow-y: auto;
@@ -3344,7 +3344,7 @@ body.is-reveal-open {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: #fefefe;
+  color: #ffffff;
   font-weight: bold;
   font-size: 0.875rem;
 }
@@ -3376,7 +3376,7 @@ input + .switch-paddle {
 
 /* line 101, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_switch.scss */
 .switch-paddle::after {
-  background: #fefefe;
+  background: #ffffff;
   content: '';
   display: block;
   position: absolute;
@@ -3498,8 +3498,8 @@ table {
 thead,
 tbody,
 tfoot {
-  border: 1px solid #f1f1f1;
-  background-color: #fefefe;
+  border: 1px solid #f2f2f2;
+  background-color: #ffffff;
 }
 
 /* line 78, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_table.scss */
@@ -3511,8 +3511,8 @@ caption {
 /* line 84, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_table.scss */
 thead,
 tfoot {
-  background: #f8f8f8;
-  color: #0a0a0a;
+  background: #f9f9f9;
+  color: #000000;
 }
 
 /* line 90, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_table.scss */
@@ -3533,7 +3533,7 @@ tfoot td {
 
 /* line 108, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_table.scss */
 tbody tr:nth-child(even) {
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
 }
 
 /* line 121, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_table.scss */
@@ -3551,19 +3551,19 @@ table.scroll {
 
 /* line 140, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_table.scss */
 table.hover tr:hover {
-  background-color: #f9f9f9;
+  background-color: #fafafa;
 }
 
 /* line 146, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_table.scss */
 table.hover tr:nth-of-type(even):hover {
-  background-color: #ececec;
+  background-color: #ededed;
 }
 
 /* line 121, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_tabs.scss */
 .tabs {
   margin: 0;
   list-style-type: none;
-  background: #fefefe;
+  background: #ffffff;
   border: 1px solid #e6e6e6;
 }
 
@@ -3602,7 +3602,7 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 145, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_tabs.scss */
 .tabs.primary > li > a {
-  color: #fefefe;
+  color: #ffffff;
 }
 
 /* line 148, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_tabs.scss */
@@ -3626,7 +3626,7 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 85, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_tabs.scss */
 .tabs-title > a:hover {
-  background: #fefefe;
+  background: #ffffff;
 }
 
 /* line 89, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_tabs.scss */
@@ -3636,7 +3636,7 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 159, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_tabs.scss */
 .tabs-content {
-  background: #fefefe;
+  background: #ffffff;
   transition: all 0.5s ease;
   border: 1px solid #e6e6e6;
   border-top: 0;
@@ -3661,8 +3661,8 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 51, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_thumbnail.scss */
 .thumbnail {
-  border: solid 4px #fefefe;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  border: solid 4px #ffffff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   display: inline-block;
   line-height: 0;
   max-width: 100%;
@@ -3678,8 +3678,8 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 38, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_title-bar.scss */
 .title-bar {
-  background: #0a0a0a;
-  color: #fefefe;
+  background: #000000;
+  color: #ffffff;
   padding: 0.5rem;
 }
 
@@ -3735,10 +3735,10 @@ table.hover tr:nth-of-type(even):hover {
   display: block;
   width: 100%;
   height: 2px;
-  background: #fefefe;
+  background: #ffffff;
   top: 0;
   left: 0;
-  box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe;
+  box-shadow: 0 7px 0 #ffffff, 0 14px 0 #ffffff;
 }
 
 /* line 101, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/util/_mixins.scss */
@@ -3758,8 +3758,8 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 97, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_tooltip.scss */
 .tooltip {
-  background-color: #0a0a0a;
-  color: #fefefe;
+  background-color: #000000;
+  color: #ffffff;
   font-size: 80%;
   padding: 0.75rem;
   position: absolute;
@@ -3776,7 +3776,7 @@ table.hover tr:nth-of-type(even):hover {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: transparent transparent #0a0a0a;
+  border-color: transparent transparent #000000;
   border-bottom-style: solid;
   bottom: 100%;
   position: absolute;
@@ -3792,7 +3792,7 @@ table.hover tr:nth-of-type(even):hover {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: #0a0a0a transparent transparent;
+  border-color: #000000 transparent transparent;
   border-top-style: solid;
   top: 100%;
   bottom: auto;
@@ -3805,7 +3805,7 @@ table.hover tr:nth-of-type(even):hover {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: transparent transparent transparent #0a0a0a;
+  border-color: transparent transparent transparent #000000;
   border-left-style: solid;
   bottom: auto;
   left: 100%;
@@ -3821,7 +3821,7 @@ table.hover tr:nth-of-type(even):hover {
   width: 0;
   height: 0;
   border: inset 0.75rem;
-  border-color: transparent #0a0a0a transparent transparent;
+  border-color: transparent #000000 transparent transparent;
   border-right-style: solid;
   bottom: auto;
   left: auto;
@@ -3888,7 +3888,7 @@ html {
 
 /* line 32, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_normalize.scss */
 body {
-  background: #fefefe;
+  background: #ffffff;
   margin: 0;
 }
 
@@ -5667,7 +5667,7 @@ to display none.
   }
   /* line 88, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_button-group.scss */
   .button-group.stacked-for-small .button:not(:last-child){
-    border-right: 1px solid #fefefe;
+    border-right: 1px solid #ffffff;
   }
   /* line 67, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_menu.scss */
   .menu.medium-horizontal > li{

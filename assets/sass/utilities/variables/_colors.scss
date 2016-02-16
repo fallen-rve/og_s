@@ -62,10 +62,8 @@ $social-colors: (
 // GRAYSCALE
 
 // Black & White
-$color-black: #000000;
-$color-white: #ffffff;
-$black: #0a0a0a;
-$white: #fefefe;
+$black: #000000;
+$white: #ffffff;
 
 // Grayscale
 $color-gray: #808080;
@@ -78,20 +76,20 @@ $color-silver-chalice: #aaaaaa;
 $color-silver: #cccccc;
 $color-alto: #dddddd;
 $color-gallery: #eeeeee;
-$color-whitesmoke: #f1f1f1;
+$whitesmoke: #f1f1f1;
 
 // ELEMENTS & SKINNING
 
 // General
-$color-background-body: $color-white;
+$color-background-body: $white;
 $color-text-main: $color-cod-gray;
 $color-background-hr: $color-silver;
 $color-border-abbr: $color-dove-gray;
-$body-background: $color-soft-black;
-$body-font-color: $color-soft-black;
+$body-background: $white;
+$body-font-color: $black;
 
 // Accessibility
-$color-background-screen-reader: $color-whitesmoke;
+$color-background-screen-reader: $whitesmoke;
 $color-text-screen-reader: $color-blue;
 
 // Links
