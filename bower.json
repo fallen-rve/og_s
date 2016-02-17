@@ -28,7 +28,6 @@
     "tests"
   ],
   "dependencies": {
-    "animate.css": "latest",
     "foundation-sites": "latest",
   }
 }
