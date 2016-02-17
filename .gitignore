@@ -98,8 +98,8 @@ downloadedFiles/*
 !.gitignore
 
 
-bower_components/bourbon
-bower_components/neat
+bower_components/
+bower_components/
 .sass-cache
 .htaccess
 compass_app_log.txt
