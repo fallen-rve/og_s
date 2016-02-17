@@ -37,6 +37,9 @@ CSS file.
 // Import foundation.scss from vendor files
 @import "../bower_components/foundation-sites/scss/foundation";
 
+// Animate.css via Scss
+@import "utilities/animate/index";
+
 // Import Motion-UI from vendor files
 // @import "../../vendor/motion-ui/src/motion-ui";
 // @include motion-ui-transitions;
