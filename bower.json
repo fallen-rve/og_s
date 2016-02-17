@@ -28,6 +28,6 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-sites": "latest"
+    "foundation-sites": "^6.1.2"
   }
 }
