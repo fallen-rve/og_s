@@ -60,9 +60,15 @@ function og_s_scripts() {
 		wp_enqueue_script( 'live-reload', '//localhost:35729/livereload.js', array(), $version, true );
 	}
 
-	wp_enqueue_style( 'og_s-google-font', og_s_font_url(), array(), null );
-	wp_enqueue_style( 'og_s-style', get_stylesheet_directory_uri() . '/style' . $suffix . '.css', array(), $version );
+	// Register styles.
+	wp_register_style( 'og_s-google-font', _s_font_url(), array(), null );
+	wp_register_style( 'animate.css', get_stylesheet_directory_uri() . '/assets/bower_components/animate.css/animate' . $suffix . '.css', array(), $version );
 
+	// Enqueue styles.
+	wp_enqueue_style( 'og_s-google-font' );
+	wp_enqueue_style( 'animate.css' );
+
+	// Enqueue scripts.
 	wp_enqueue_script( 'og_s-project', get_template_directory_uri() . '/assets/js/project' . $suffix . '.js', array( 'jquery' ), $version, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -98,10 +104,10 @@ endif;
  */
 function og_s_include_svg_definitions() {
 
-	// Define svg sprite file
+	// Define SVG sprite file.
 	$svg_defs = get_template_directory() . '/assets/images/svg-defs.svg';
 
-	// If it exsists, include it
+	// If it exists, include it.
 	if ( file_exists( $svg_defs ) ) {
 		require_once( $svg_defs );
 	}
