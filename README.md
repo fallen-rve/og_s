@@ -8,8 +8,8 @@ wd_s
 * Sass
 * PostCSS
 * SassDocs
-* [Bourbon](http://bourbon.io/)
-* [Neat](http://neat.bourbon.io/)
+* [Foundation](http://foundation.zurb.com/)
+* [Animate.scss](assets/sass/utilities/animate/README.md)
 * Bower
 * Live reload
 * WDS Simple Page Builder support
