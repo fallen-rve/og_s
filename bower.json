@@ -28,6 +28,6 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-sites": "latest",
+    "foundation-sites": "latest"
   }
 }
