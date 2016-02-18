@@ -74,6 +74,22 @@ function og_s_customize_register( $wp_customize ) {
             'sanitize'    => 'html'
         )
     );
+    // Add a control to upload the logo
+    $wp_customize->add_setting(
+        'og_s_logo'
+    );
+    $wp_customize->add_control( 
+        new WP_Customize_Image_Control( 
+            $wp_customize, 
+            'og_s_logo',
+            array(
+                'label' => 'Site Logo',
+                'description' => __( 'The Site Logo is used for your main logo and your login page logo.', 'og_s' ),
+                'section' => 'title_tagline',
+                'settings' => 'og_s_logo',
+            ) 
+        )
+    );
 }
 add_action( 'customize_register', 'og_s_customize_register' );
 
@@ -81,7 +97,7 @@ add_action( 'customize_register', 'og_s_customize_register' );
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function og_s_customize_preview_js() {
-	wp_enqueue_script( 'og_s_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
+	wp_enqueue_script( 'og_s_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
 add_action( 'customize_preview_init', 'og_s_customize_preview_js' );
 
