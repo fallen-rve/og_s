@@ -61,11 +61,12 @@ function og_s_scripts() {
 	}
 
 	// Register styles.
-	wp_register_style( 'og_s-google-font', _s_font_url(), array(), null );
+	wp_register_style( 'og_s-google-font', og_s_font_url(), array(), null );
 
 	// Enqueue styles.
 	wp_enqueue_style( 'og_s-google-font' );
 	wp_enqueue_style( 'animate.css' );
+	wp_enqueue_style( 'og_s-style', get_stylesheet_directory_uri() . '/style' . $suffix . '.css', array(), $version );
 
 	// Enqueue scripts.
 	wp_enqueue_script( 'og_s-project', get_template_directory_uri() . '/assets/js/project' . $suffix . '.js', array( 'jquery' ), $version, true );
