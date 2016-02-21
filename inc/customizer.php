@@ -80,10 +80,10 @@ function og_s_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'og_s_logo'
     );
-    $wp_customize->add_control( 
-        new WP_Customize_Media_Control( 
-            $wp_customize, 
-            'og_s_logo', 
+    $wp_customize->add_control(
+        new WP_Customize_Media_Control(
+            $wp_customize,
+            'og_s_logo',
             array(
                 'section'     => 'title_tagline',
                 'label'       => __( 'Site Logo' ),

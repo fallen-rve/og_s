@@ -69,7 +69,21 @@ function og_s_scripts() {
 	wp_enqueue_style( 'og_s-style', get_stylesheet_directory_uri() . '/style' . $suffix . '.css', array(), $version );
 
 	// Enqueue scripts.
-	wp_enqueue_script( 'og_s-project', get_template_directory_uri() . '/assets/js/project' . $suffix . '.js', array( 'jquery' ), $version, true );
+	wp_register_script( 'og_s-project', get_template_directory_uri() . '/assets/js/project' . $suffix . '.js', array( 'jquery' ), $version, true );
+
+	// Localize php to project{.min}.js
+	// Use og_s_vars to get php var
+	// In the array, key is the property name, value is the property value
+	// Ex. alert( og_s_var.alert ); would display an alert box that reads lorem ipsum
+	wp_localize_script( 
+	    'og_s-project', 
+	    'og_s_vars', 
+	    array(
+	        'alert' => 'lorem ipsum'
+	    ) 
+	);
+
+	wp_enqueue_script( 'og_s-project' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
