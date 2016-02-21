@@ -13,6 +13,12 @@
 			$( '.site-title a' ).text( to );
 		} );
 	} );
+	// Site image replaces site title
+	wp.customize( 'og_s_logo', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-title a' ).html( to );
+		} );
+	} );
 	wp.customize( 'blogdescription', function( value ) {
 		value.bind( function( to ) {
 			$( '.site-description' ).text( to );

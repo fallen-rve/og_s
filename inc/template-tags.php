@@ -333,3 +333,42 @@ function og_s_do_copyright_text() {
 	// Echo the text.
 	echo '<span class="copyright-text">' . wp_kses_post( $copyright_text ) . '</span>';
 }
+
+/**
+ * Return Site Title or Site Logo
+ * @param  bool           $html   The return value ( uri or html )
+ * @param  string         $string The Image Size to use
+ * @return string | array         The image HTML or Image array.
+ */
+function og_s_get_site_logo( $html = true, $size = 'full' ) {
+
+	// Grab our customizer settings.
+	$site_logo_id = get_theme_mod('og_s_logo');
+
+
+	// Return Site Title if nothing found
+	if( ! $site_logo_id && $html ) {
+		return get_bloginfo( 'name' );
+	}
+
+	if( $html ):
+		// Return the image html
+		return wp_get_attachment_image( 
+		    $site_logo_id, 
+		    $size, 
+		    false, 
+		    array(
+		        'title' =>  esc_attr( get_bloginfo('name') ),
+		        'alt'   =>  esc_attr( get_bloginfo( 'name' ) )
+		    )
+		);
+	else:
+		// Return the image array
+		return  wp_get_attachment_image_src(
+		    $site_logo_id,
+		    $size,
+		    false
+		);
+	endif;
+
+}

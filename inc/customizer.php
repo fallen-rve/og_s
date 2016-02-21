@@ -13,7 +13,8 @@
 function og_s_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+    $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->get_setting( 'og_s_logo' )->transport        = 'postMessage';
 
 	// Add our social link options
     $wp_customize->add_section(
@@ -74,22 +75,25 @@ function og_s_customize_register( $wp_customize ) {
             'sanitize'    => 'html'
         )
     );
+
     // Add a control to upload the logo
     $wp_customize->add_setting(
         'og_s_logo'
     );
     $wp_customize->add_control( 
-        new WP_Customize_Image_Control( 
+        new WP_Customize_Media_Control( 
             $wp_customize, 
-            'og_s_logo',
+            'og_s_logo', 
             array(
-                'label' => 'Site Logo',
+                'section'     => 'title_tagline',
+                'label'       => __( 'Site Logo' ),
                 'description' => __( 'The Site Logo is used for your main logo and your login page logo.', 'og_s' ),
-                'section' => 'title_tagline',
-                'settings' => 'og_s_logo',
-            ) 
+                'settings'    => 'og_s_logo',
+                'mime_type'   => 'image',
+            )
         )
     );
+
 }
 add_action( 'customize_register', 'og_s_customize_register' );
 

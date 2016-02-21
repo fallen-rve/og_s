@@ -147,6 +147,46 @@ function og_s_widgets_init() {
 add_action( 'widgets_init', 'og_s_widgets_init' );
 
 /**
+ * Adds logo to login
+ * Adds Site Title to login
+ * Adds Site home url to login
+ */
+function change_my_wp_login_image() {
+
+	$imageArray = og_s_get_site_logo( false, 'full' );
+
+	add_filter( 'login_headerurl',   function(){ return home_url(); } );
+	add_filter( 'login_headertitle', function(){ return get_bloginfo( 'name' ); } );
+
+	if( $imageArray ) { 
+
+		echo "
+			<style>
+				body.login #login h1 a {
+					background: url('" . $imageArray[0] . "') 0px 0 no-repeat transparent;
+					width:" . $imageArray[1] ."px; 
+					height:". $imageArray[2] ."px;
+				}
+				body.login #login {
+					width:100%;
+				}
+				body.login #login #loginform,
+				body.login #login #nav,
+				body.login #login #backtoblog {
+					width:272px;
+					margin-left:auto;
+					margin-right:auto;
+				}
+			</style>
+		";
+    } else {
+        return;
+    }
+
+}
+add_action("login_head", "change_my_wp_login_image");
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
