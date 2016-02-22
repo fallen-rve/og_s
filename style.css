@@ -4021,36 +4021,34 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 /* line 5, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
-body,
 button,
 input,
-select,
 textarea {
   color: #cacaca;
   font-family: "Open Sans", sans-serif;
   line-height: 1.625;
 }
 
-/* line 17, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
+/* line 15, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
 blockquote,
 q {
   margin: 0 1.5rem;
   quotes: "" "";
 }
 
-/* line 22, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
+/* line 20, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
 blockquote:before, blockquote:after,
 q:before,
 q:after {
   content: "";
 }
 
-/* line 28, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
+/* line 26, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
 address {
   margin: 0 0 1.5rem 0;
 }
 
-/* line 32, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
+/* line 30, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
 pre {
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 0.9375rem;
@@ -4061,54 +4059,31 @@ pre {
   padding: 1.5rem;
 }
 
-/* line 42, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
-code,
-kbd,
+/* line 40, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
 tt,
 var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 0.9375rem;
 }
 
-/* line 50, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
-abbr,
+/* line 46, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
 acronym {
   border-bottom: 1px dotted #666666;
   cursor: help;
 }
 
-/* line 56, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
+/* line 51, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
 mark,
 ins {
   text-decoration: none;
 }
 
-/* line 61, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
-sup,
-sub {
-  font-size: 75%;
-  height: 0;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 70, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
-sup {
-  bottom: 1ex;
-}
-
-/* line 74, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
-sub {
-  top: .5ex;
-}
-
-/* line 78, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
+/* line 56, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
 big {
   font-size: 125%;
 }
 
-/* line 83, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
+/* line 61, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_typography.scss */
 .entry-title,
 .entry-content,
 .comments-title,
@@ -4196,60 +4171,9 @@ big {
   clear: both;
 }
 
-/* line 7, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
-embed,
-iframe,
-object {
-  max-width: 100%;
-}
-
-/* line 17, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
-figure {
-  margin: 0;
-}
-
-/* line 23, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
-ul,
-ol {
-  margin: 0 0 3rem 1.5rem;
-}
-
-/* line 28, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
-ul {
-  list-style: disc;
-}
-
-/* line 32, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
-ol {
-  list-style: decimal;
-}
-
-/* line 36, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
-li > ul,
-li > ol {
-  margin: 0 0 0 1.5rem;
-}
-
-/* line 41, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
-dt {
-  font-weight: 700;
-}
-
-/* line 45, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
+/* line 6, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
 dd {
   margin: 0 1.5rem 1.5rem 0;
-}
-
-/* line 51, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
-table {
-  height: auto;
-  width: 100%;
-  margin: 0 0 1.5rem 0;
-}
-
-/* line 57, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_elements.scss */
-th {
-  font-weight: 700;
 }
 
 /* line 9, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
@@ -4261,49 +4185,49 @@ th {
   border: none;
 }
 
-/* line 23, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 17, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .wp-caption {
   margin: 0 0 1.5rem 0;
   max-width: 100%;
 }
 
-/* line 27, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 21, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 0 auto;
 }
 
-/* line 33, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 27, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .wp-caption.aligncenter {
   margin: 0 auto 1.5rem auto;
 }
 
-/* line 38, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 32, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .wp-caption.alignleft {
   margin-right: 1.5rem;
 }
 
-/* line 43, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 37, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .wp-caption.alignright {
   margin-left: 1.5rem;
 }
 
-/* line 47, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 41, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .wp-caption .wp-caption-text {
   margin: 0.75rem 0;
 }
 
-/* line 52, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 46, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .wp-caption-text {
   text-align: center;
 }
 
-/* line 58, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 52, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery {
   margin: 0 0 1.5rem 0;
 }
 
-/* line 62, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 56, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-item {
   height: auto;
   width: 100%;
@@ -4312,52 +4236,52 @@ th {
   vertical-align: top;
 }
 
-/* line 69, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 63, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
 
-/* line 73, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 67, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
 
-/* line 77, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 71, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
 
-/* line 81, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 75, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
 
-/* line 85, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 79, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
 
-/* line 89, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 83, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
 
-/* line 93, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 87, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
 
-/* line 97, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 91, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
-/* line 102, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 96, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .gallery-caption {
   display: block;
 }
 
-/* line 107, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 101, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .fluid-embed {
   height: 0;
   overflow: hidden;
@@ -4365,7 +4289,7 @@ th {
   position: relative;
 }
 
-/* line 113, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
+/* line 107, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_media.scss */
 .fluid-embed embed,
 .fluid-embed object,
 .fluid-embed iframe {
@@ -4785,7 +4709,7 @@ textarea {
   border: 1px solid #cccccc;
   border-radius: 0;
   line-height: 1.45;
-  padding: rem(3) rem(5);
+  padding: 0.1875rem 0.3125rem;
   -webkit-appearance: none;
 }
 
@@ -5059,13 +4983,13 @@ textarea {
 .gform_wrapper .gform_body .gform_fields .gfield,
 .gform_wrapper .gform_body .gform_fields .gfield.gf_left_half,
 .gform_wrapper .gform_body .gform_fields .gfield.gf_right_half {
-  margin-bottom: rem(25);
+  margin-bottom: 1.5625rem;
 }
 
 /* line 64, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
 .gform_wrapper .gfield_label {
   color: #333333;
-  font-size: rem(16);
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -5079,19 +5003,19 @@ textarea {
 .gform_wrapper input[type="file"],
 .gform_wrapper textarea {
   background: #ffffff;
-  padding: rem(3) rem(5) !important;
+  padding: 0.1875rem 0.3125rem !important;
 }
 
 /* line 90, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
 .gform_wrapper select {
   background: url(assets/images/svg-icons/caret-down.svg) no-repeat 97% transparent;
   background-color: #ffffff;
-  background-size: rem(12);
+  background-size: 0.75rem;
   border-color: #cccccc;
   border-radius: 0;
   line-height: 1.45;
   margin-left: 0 !important;
-  padding: rem(3) rem(5);
+  padding: 0.1875rem 0.3125rem;
   -webkit-appearance: none;
 }
 
@@ -5172,7 +5096,7 @@ textarea {
 
 /* line 219, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
 .gform_wrapper .gform_body .gform_fields .gfield .chosen-container-single {
-  font-size: rem(16);
+  font-size: 1rem;
 }
 
 /* line 223, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
@@ -5181,13 +5105,13 @@ textarea {
   border-color: #cccccc;
   border-radius: 0;
   height: auto;
-  padding: rem(3) rem(5);
+  padding: 0.1875rem 0.3125rem;
 }
 
 /* line 232, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
 .gform_wrapper .gform_body .gform_fields .gfield .chosen-container-single .chosen-single div b {
   position: absolute;
-  top: 40% rem(11);
+  top: 40% 0.6875rem;
   content: '';
   display: block;
   width: 0;
@@ -5207,7 +5131,7 @@ textarea {
 
 /* line 249, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
 .gform_wrapper .gform_body .gform_fields .gfield .chosen-container-single .chosen-drop .chosen-results li {
-  padding: rem(10) rem(5);
+  padding: 0.625rem 0.3125rem;
 }
 
 /* line 257, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
@@ -5279,7 +5203,7 @@ textarea {
 .gform_wrapper .gform_body .gform_fields .gfield .gfield_time_hour select,
 .gform_wrapper .gform_body .gform_fields .gfield .gfield_time_minute select,
 .gform_wrapper .gform_body .gform_fields .gfield .gfield_time_ampm select {
-  width: rem(75) !important;
+  width: 4.6875rem !important;
 }
 
 /******************************************************************

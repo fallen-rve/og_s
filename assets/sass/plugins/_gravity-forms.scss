@@ -23,10 +23,10 @@ $gf-border-width: 0; // border-width on form
 $gf-border-color: $white; // border color
 
 // Fields / Rows
-$gf-field-margin-bottom: rem(25); // margin between field and label below (vertical spacing between rows)
+$gf-field-margin-bottom: rem-calc(25); // margin between field and label below (vertical spacing between rows)
 
 // Labels
-$gf-label-font-size: rem(16);
+$gf-label-font-size: rem-calc(16);
 $gf-label-font-color: $color-mineshaft;
 $gf-label-font-weight: 700;
 
@@ -90,7 +90,7 @@ $gf-input-padding: $padding-input;
     select {
         background: url(assets/images/svg-icons/caret-down.svg) no-repeat 97% transparent;
         background-color: $gf-input-color-background;
-        background-size: rem(12);
+        background-size: rem-calc(12);
         border-color: $gf-input-color-border;
         border-radius: 0;
         line-height: 1.45;
@@ -217,7 +217,7 @@ $gf-input-padding: $padding-input;
 
     // Containing div
     .chosen-container-single {
-        font-size: rem(16);
+        font-size: rem-calc(16);
 
         // Link holding initial selection - what user first sees
         .chosen-single {
@@ -230,7 +230,7 @@ $gf-input-padding: $padding-input;
 
         // Default state of icon for select
         .chosen-single div b {
-            @include position(absolute, 40% rem(11) null null);
+            @include position(absolute, 40% rem-calc(11) null null);
             @include css-triangle(12px, $color-silver, down); // adjust size and color
 
             background: none; // hide the default chosen background
@@ -247,7 +247,7 @@ $gf-input-padding: $padding-input;
 
             // Search results list
             .chosen-results li {
-                padding: rem(10) rem(5);
+                padding: rem-calc(10) rem-calc(5);
             }
         }
 
@@ -333,7 +333,7 @@ $gf-input-padding: $padding-input;
 
         // AM / PM select
         select {
-            width: rem(75) !important;
+            width: rem-calc(75) !important;
         }
     }
 }
