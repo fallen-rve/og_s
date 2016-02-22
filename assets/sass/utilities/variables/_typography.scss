@@ -16,20 +16,20 @@ $line-height-pre: $line-height-body;
 
 $header-sizes: (
   small: (
-    'h1': 24,
-    'h2': 20,
-    'h3': 19,
-    'h4': 18,
-    'h5': 17,
-    'h6': 16,
+    'h1, .h1': 24,
+    'h2, .h2': 20,
+    'h3, .h3': 19,
+    'h4, .h4': 18,
+    'h5, .h5': 17,
+    'h6, .h6': 16,
   ),
   medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
-    'h4': 25,
-    'h5': 20,
-    'h6': 16,
+    'h1, .h1': 48,
+    'h2, .h2': 40,
+    'h3, .h3': 31,
+    'h4, .h4': 25,
+    'h5, .h5': 20,
+    'h6, .h6': 16,
   ),
 );
 $header-color: inherit;
@@ -44,7 +44,7 @@ $header-small-font-color: $medium-gray;
 $small-font-size: 80%;
 
 $paragraph-lineheight: 1.6;
-$paragraph-margin-bottom: 1rem;
+$paragraph-margin-bottom: rem-calc(24);
 $paragraph-text-rendering: optimizeLegibility;
 
 $code-color: $black;

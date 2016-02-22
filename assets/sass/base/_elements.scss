@@ -11,11 +11,7 @@ object {
 }
 
 hr {
-	@include size(auto 1px);
 
-	background-color: $color-background-hr;
-	border: 0;
-	margin: 0 0 rem-calc(24) 0;
 }
 
 figure {
@@ -23,41 +19,6 @@ figure {
 }
 
 // Lists
-
-ul,
-ol {
-	margin: 0 0 rem-calc(48) rem-calc(24);
-}
-
-ul {
-	list-style: disc;
-}
-
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin: 0 0 0 rem-calc(24);
-}
-
-dt {
-	font-weight: 700;
-}
-
 dd {
 	margin: 0 rem-calc(24) rem-calc(24) 0;
-}
-
-// Tables
-
-table {
-	@include size(100% auto);
-	
-	margin: 0 0 rem-calc(24) 0;
-}
-
-th {
-	font-weight: 700;
 }
