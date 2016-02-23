@@ -372,3 +372,20 @@ function og_s_get_site_logo( $html = true, $size = 'full' ) {
 	endif;
 
 }
+
+/**
+ * Echo the copyright text saved in the Customizer
+ */
+function og_s_do_built_by_text() {
+
+	// Grab our customizer settings.
+	$show_built_by = get_theme_mod( 'og_s_show_built_by' );
+
+	// Stop if there's nothing to display.
+	if ( ! $show_built_by ) {
+		return false;
+	}
+
+	// Echo the text.
+	echo '<div class="built-by-text"><span>Website created by <a itemprop="url" href="http://orionweb.net" target="_blank">Orion Group</a>.</span></div>';
+}

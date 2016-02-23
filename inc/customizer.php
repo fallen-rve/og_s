@@ -76,6 +76,24 @@ function og_s_customize_register( $wp_customize ) {
         )
     );
 
+    // Add our built by text field
+    $wp_customize->add_setting(
+        'og_s_show_built_by',
+        array(
+            'default'           => ''
+        )
+    );
+    $wp_customize->add_control(
+        'og_s_show_built_by',
+        array(
+            'label'       => __( 'Show Built By Text', 'og_s' ),
+            'description' => __( 'The built by text will be displayed beneath the menu in the footer.', 'og_s' ),
+            'section'     => 'og_s_footer_section',
+            'type'        => 'checkbox',
+            'sanitize'    => 'html'
+        )
+    );
+
     // Add a control to upload the logo
     $wp_customize->add_setting(
         'og_s_logo'

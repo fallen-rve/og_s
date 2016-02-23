@@ -22,6 +22,7 @@
 
 			<div class="site-info">
 				<?php og_s_do_copyright_text(); ?>
+				<?php if(is_home() || is_front_page()) { og_s_do_built_by_text(); } ?>
 			</div><!-- .site-info -->
 
 		</div><!-- .wrap -->

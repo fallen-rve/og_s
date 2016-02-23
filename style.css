@@ -4375,6 +4375,20 @@ body.ready .not-ready {
   float: right;
 }
 
+/* line 35, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/structure/_layout.scss */
+.built-by-text {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+/* line 80, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/grid/_column.scss */
+.built-by-text:last-child:not(:first-child) {
+  float: right;
+}
+
 /* line 5, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_header.scss */
 .site-title {
   font-size: 3rem;
@@ -5219,6 +5233,11 @@ to display none.
   display: none;
 }
 
+/**
+ * If you need to make a quick fix, you can do it here. Later when you have proper time, you can move the fix into the proper structure/organization.
+ * IF YOU LEAVE YOUR SASS IN HERE... I WILL FIND YOU... AND I WILL SHAME YOU!!
+ */
+
 @media screen and (min-width: 0em) and (max-width: 39.9375em){
   /* line 81, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/components/_visibility.scss */
   .hide-for-small-only{
@@ -5761,6 +5780,11 @@ to display none.
   }
   /* line 28, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/structure/_layout.scss */
   .secondary{
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+  /* line 35, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/structure/_layout.scss */
+  .built-by-text{
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
