@@ -1,7 +1,7 @@
 wd_s
 ===
 
-[WebDevStudios](http://webdevstudios.com) fork of Automattic's [_s](https://github.com/Automattic/_s). Used as our new project theme boilerplate. Pull requests are welcome!
+[Orion Group](http://webdevstudios.com)'s fork of WebDevStudios [wd_s](https://github.com/WebDevStudios/wd_s). Used as our new project theme boilerplate. Pull requests are welcome!
 
 # Features
 * Grunt
@@ -19,7 +19,7 @@ wd_s
 
 # Pre-Installation
 
-Basic knowledge of the command line and the following dependencies are required to use wd_s:
+Basic knowledge of the command line and the following dependencies are required to use og_s:
 
 * [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 * [Node](http://nodejs.org/)
@@ -31,11 +31,11 @@ Basic knowledge of the command line and the following dependencies are required 
 
 To get started, we'll download the files and then to do some finding and replacing:
 
-1) [Download](https://github.com/WebDevStudios/wd_s/archive/master.zip) and extract the zip into your project's `wp-content/themes` directory and rename `wd_s` to fit your needs
+1) [Download](https://github.com/WebDevStudios/wd_s/archive/master.zip) and extract the zip into your project's `wp-content/themes` directory and rename `og_s` to fit your needs
 
 2) Find & Replace
 
-You'll need to change all instances of the names: `_s` to your project name. While this can be a tedious chore, SublimeText 3 can do a global "find & replace" allowing you to do this in under 60 seconds.
+You'll need to change all instances of the names: `og_s` to your project name. While this can be a tedious chore, SublimeText 3 can do a global "find & replace" allowing you to do this in under 60 seconds.
 
 * Search for: `'og_s'` and replace with: `'project-name'` (inside single quotations) to capture the text domain
 * Search for: `og_s_` and replace with: `project-name_` to capture all the function names
@@ -60,7 +60,7 @@ cd /your-project/wordpress/wp-content/themes/your-theme
 npm install && bower install
 ```
 
-You are now ready to use wd_s!
+You are now ready to use og_s!
 
 # How to use Grunt
 
