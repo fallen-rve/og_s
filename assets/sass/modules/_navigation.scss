@@ -2,21 +2,6 @@
 // Navigation
 //--------------------------------------------------------------
 
-// Links
-a {
-	color: $color-link;
-
-	&:visited {
-		color: $color-link-visited;
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color-link-hover;
-	}
-}
-
 // Navicon menu
 .menu-toggle {
 	display: block;
