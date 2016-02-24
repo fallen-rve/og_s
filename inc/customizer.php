@@ -112,6 +112,49 @@ function og_s_customize_register( $wp_customize ) {
         )
     );
 
+    // Add our contact information options
+    $wp_customize->add_section(
+        'og_s_company_information_section',
+        array(
+            'title'       => __( 'Company Info', 'og_s' ),
+            'description' => __( 'These are the settings for your company\'s contact information.', 'og_s' ),
+            'priority'    => 100,
+        )
+    );
+
+    // Create an multidimensional array of our company info inputs for ease of setup
+    $contact_inputs = array( 
+        'company_name'   => 'Company Name',
+        'address_line_1' => 'Address Line 1',
+        'address_line_2' => 'Address',
+        'city'           => 'City',
+        'state'          => 'State',
+        'zip'            => 'Zip',
+        'country'        => 'Country',
+        'phone_number'   => 'Phone Number',
+        'fax'            => 'Fax'
+    );
+
+    // Loop through our array to setup our fields
+    foreach( $contact_inputs as $contact_input => $input ) {
+
+        $wp_customize->add_setting(
+            'og_s_' . $contact_input,
+            array(
+                'default' => '',
+                'sanitize_callback' => 'og_s_sanitize_customizer_url'
+            )
+        );
+        $wp_customize->add_control(
+            'og_s_' . $contact_input,
+            array(
+                'label'   => sprintf( __( '%s', 'og_s' ), $input ),
+                'section' => 'og_s_company_information_section',
+                'type'    => 'text',
+            )
+        );
+    }
+
 }
 add_action( 'customize_register', 'og_s_customize_register' );
 

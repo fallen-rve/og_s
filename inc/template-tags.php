@@ -389,3 +389,20 @@ function og_s_do_built_by_text() {
 	// Echo the text.
 	echo '<div class="built-by-text"><span>Website created by <a itemprop="url" href="http://orionweb.net" target="_blank">Orion Group</a>.</span></div>';
 }
+
+/**
+ * Echo contact information text saved in the Customizer 
+ */
+function og_s_do_company_info( $contact_info ) {
+
+	// Grab our customizer settings.
+	$info_return = get_theme_mod( $contact_info );
+
+	// Stop if there's nothing to display.
+	if ( ! $info_return ) {
+		return false;
+	}
+
+	// Echo the text.
+	echo $info_return;
+}
