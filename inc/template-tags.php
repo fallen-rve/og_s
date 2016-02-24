@@ -393,16 +393,25 @@ function og_s_do_built_by_text() {
 /**
  * Echo contact information text saved in the Customizer 
  */
-function og_s_do_company_info( $contact_info ) {
+function og_s_get_company_info( $contact_information = array( 'company_name', 'address_line_1', 'address_line_2', 'city', 'state', 'zip', 'country', 'phone_number', 'fax') ) {
 
-	// Grab our customizer settings.
-	$info_return = get_theme_mod( $contact_info );
+	//Initialize an empty array for error handling
+	$info_return = array();
+
+	// Loop through contact information.
+	// Defaults are above, may be overwrittin to return less
+	foreach( $contact_information as $contact_info ) {
+
+		// Grab our customizer settings.
+		$info_return[$contact_info] = get_theme_mod( 'og_s_' . $contact_info );
+
+	}
 
 	// Stop if there's nothing to display.
-	if ( ! $info_return ) {
+	if ( empty( $info_return ) ) {
 		return false;
 	}
 
 	// Echo the text.
-	echo $info_return;
+	return $info_return;
 }

@@ -142,7 +142,7 @@ function og_s_customize_register( $wp_customize ) {
             'og_s_' . $contact_input,
             array(
                 'default' => '',
-                'sanitize_callback' => 'og_s_sanitize_customizer_url'
+                'sanitize_callback' => 'og_s_sanitize_customizer_text'
             )
         );
         $wp_customize->add_control(
