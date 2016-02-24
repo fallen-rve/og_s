@@ -96,6 +96,8 @@ downloadedFiles/*
 
 # do not ignore .gitignore
 !.gitignore
+!.bowerrc
+!.travis.yml
 
 
 assets/bower_components/foundation-sites/
