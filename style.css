@@ -1350,7 +1350,7 @@ blockquote {
 }
 
 /* line 397, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/bower_components/foundation-sites/scss/typography/_base.scss */
-blockquote, blockquote q {
+blockquote, blockquote p {
   line-height: 1.6;
   color: #8a8a8a;
 }
@@ -5235,7 +5235,7 @@ to display none.
 
 /**
  * If you need to make a quick fix, you can do it here. Later when you have proper time, you can move the fix into the proper structure/organization.
- * IF YOU LEAVE YOUR SASS IN HERE... I WILL FIND YOU... AND I WILL SHAME YOU!!
+ * IF YOU LEAVE YOUR SASS IN HERE... I WILL FIND YOU... AND I WILL SHAME YOU!! (and possibly kick you in the nuts... on camera)
  */
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em){
