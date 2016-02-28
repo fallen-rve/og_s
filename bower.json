@@ -1,6 +1,6 @@
 {
-  "name": "_s",
-  "description": "A theme boilerplate for WebDevStudios.",
+  "name": "og_s",
+  "description": "A theme boilerplate for Orion Group.",
   "version": "1.0.0",
   "keywords": [
     "css",
@@ -13,7 +13,7 @@
     "web",
     "wordpress"
   ],
-  "homepage": "http://webdevstudios.com",
+  "homepage": "http://www.orionweb.net",
   "main": [
     "sass/style.scss",
     "style.css"

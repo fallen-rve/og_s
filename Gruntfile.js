@@ -292,11 +292,10 @@ module.exports = function(grunt) {
 		 *
 		 * @link https://github.com/SassDoc/grunt-sassdoc
 		 */
-		sassdoc: {
+		/*sassdoc: {
 			default: {
 				src: [
-					//'assets/scss/**/*.scss',
-					'assets/bower_components/foundation-sites/foundation-docs'
+					//'assets/bower_components/foundation-sites/foundation-docs/'
 				],
 				options: {
 					dest: './sassdoc/',
@@ -305,14 +304,14 @@ module.exports = function(grunt) {
 						watermark: false
 					},
 					groups: {
-						wds: 'WebDevStudios',
-						'undefined': 'Bourbon & Neat'
+						og: 'OrionGroup',
+						'undefined': 'Foundation'
 					},
-					description: 'Sass Documentation, which includes Bourbon and Neat documentation as well.',
+					description: 'Sass Documentation, which includes Foundation.',
 					sort: ['group>'],
 				},
 			},
-		},
+		},*/
 
 		/**
 		 * Automatic Notifications when Grunt tasks fail.
@@ -337,7 +336,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('sprites', ['sprite']);
 	grunt.registerTask('icons', ['svgmin', 'svgstore']);
 	grunt.registerTask('i18n', ['makepot']);
-	grunt.registerTask('default', ['styles', 'javascript', 'sprites', 'imageminnewer', 'icons', 'i18n', 'sassdoc']);
+	grunt.registerTask('default', ['styles', 'javascript', 'sprites', 'imageminnewer', 'icons', 'i18n']);
 
 	// grunt-notify shows native notifications on errors.
 	grunt.loadNpmTasks('grunt-notify');
