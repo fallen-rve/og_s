@@ -39,3 +39,14 @@ function og_s_infinite_scroll_render() {
 		endif;
 	}
 } // end function og_s_infinite_scroll_render
+ 
+function removeJetpackBanners() {
+	$blog_id = get_current_blog_id(); //Check the current site's blog ID.
+	if ( 1 !== $blog_id ) { //If the blog ID is not...
+		 
+		$jetpack = Jetpack::init();
+		remove_action('admin_notices',array($jetpack,"admin_connect_notice"));
+		remove_action('admin_notices',array($jetpack,"admin_jetpack_manage_notice"));
+	} //Close Blog ID conditional
+} //Close function
+add_action("admin_head","removeJetpackBanners");

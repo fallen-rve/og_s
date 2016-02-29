@@ -215,3 +215,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load styles and scripts
  */
 require get_template_directory() . '/inc/scripts.php';
+
+/**
+ * Include Address Shortcode
+ */
+require get_template_directory() . '/inc/address-shortcode.php';

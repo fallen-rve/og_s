@@ -132,6 +132,7 @@ function og_s_customize_register( $wp_customize ) {
         'zip'            => 'Zip',
         'country'        => 'Country',
         'phone_number'   => 'Phone Number',
+        'email'          => 'Email',
         'fax'            => 'Fax'
     );
 

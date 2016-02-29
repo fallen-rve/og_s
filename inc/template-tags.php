@@ -393,7 +393,7 @@ function og_s_do_built_by_text() {
 /**
  * Echo contact information text saved in the Customizer 
  */
-function og_s_get_company_info( $contact_information = array( 'company_name', 'address_line_1', 'address_line_2', 'city', 'state', 'zip', 'country', 'phone_number', 'fax') ) {
+function og_s_get_company_info( $contact_information = array( 'company_name', 'address_line_1', 'address_line_2', 'city', 'state', 'zip', 'country', 'phone_number', 'email', 'fax') ) {
 
 	//Initialize an empty array for error handling
 	$info_return = array();
