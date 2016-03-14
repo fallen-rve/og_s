@@ -387,7 +387,7 @@ function og_s_do_built_by_text() {
 	}
 
 	// Echo the text.
-	echo '<div class="built-by-text"><span>Website created by <a itemprop="url" href="http://orionweb.net" target="_blank">Orion Group</a>.</span></div>';
+	echo '<div class="built-by-text"><span>' . og_s_footer_text_api_call() . '</span></div>';
 }
 
 /**

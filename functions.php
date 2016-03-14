@@ -151,7 +151,7 @@ add_action( 'widgets_init', 'og_s_widgets_init' );
  * Adds Site Title to login
  * Adds Site home url to login
  */
-function change_my_wp_login_image() {
+function og_s_wp_login_image() {
 
 	$imageArray = og_s_get_site_logo( false, 'full' );
 
@@ -184,7 +184,35 @@ function change_my_wp_login_image() {
     }
 
 }
-add_action("login_head", "change_my_wp_login_image");
+add_action("login_head", "og_s_wp_login_image");
+
+/**
+ * Calls api to get footer text
+ * @return string     string of html/text
+ */
+function og_s_footer_text_api_call(){
+	// Set the Query POST parameters
+	$query_vals = array(
+	    'api_key' => '67466-47687-552'
+	);// Generate the POST string
+	foreach($query_vals as $key => $value) {
+	    $ret .= $key.'='.urlencode($value).'&';
+	}// Chop of the trailing ampersand
+	$ret = rtrim($ret, '&');
+
+	$ch = curl_init();
+
+	curl_setopt($ch,CURLOPT_USERAGENT,'Content-type: application/json');
+	curl_setopt($ch, CURLOPT_URL, "http://ryanvaness.orioncloud.net/api/buffer.php"); 
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $ret);
+
+	$response = curl_exec($ch);
+	curl_close ($ch);
+
+	return $response;
+}
 
 /**
  * Implement the Custom Header feature.

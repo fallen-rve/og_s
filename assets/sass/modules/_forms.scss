@@ -15,18 +15,19 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background-color: $color-button-background;
+	background-color: $button-background;
 	border: none;
 	min-height: rem-calc(31);
+	color: $button-color;
 	-webkit-appearance: none; // Remove iOS styles
 
 	&:hover {
-		background-color: $color-button-background-hover;
+		background-color: $button-background-hover;
 	}
 
 	&:active,
 	&:focus {
-		background-color: $color-button-background-hover;
+		background-color: $button-background-hover;
 	}
 }
 

@@ -86,7 +86,7 @@
 			float: left;
 			left: -999em;
 			position: absolute;
-			top: em(24px);
+			top: rem-calc(24px);
 			z-index: 99999;
 
 			// Sub-sub menu
