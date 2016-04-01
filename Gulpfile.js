@@ -216,9 +216,10 @@ gulp.task('sass:lint', function () {
     gulp.src([
         'assets/sass/**/*.scss',
         '!assets/sass/base/_normalize.scss',
-        '!assets/sass/utilities/animate/**/*.*'
+        '!assets/sass/utilities/animate/**/*.*',
+        '!assets/sass/base/_sprites.scss'
     ])
-        .pipe(sassLint({}))
+        .pipe(sassLint())
         .pipe(sassLint.format())
         .pipe(sassLint.failOnError())
 });
