@@ -33,7 +33,7 @@ var paths = {
     php: ['./*.php', './**/*.php'],
     sass: 'assets/sass/**/*.scss',
     concat_scripts: 'assets/js/concat/*.js',
-    scripts: 'assets/js/*.js',
+    scripts: ['assets/js/*.js', '!assets/js/*.min.js', '!assets/js/customizer.js'],
     sprites: 'assets/images/sprites/*.png'
 };
 
@@ -189,7 +189,7 @@ gulp.task('spritesmith', function() {
  * Delete scripts before we concat and minify
  */
 gulp.task('clean:scripts', function() {
-  return del(['assets/js/project.js']);
+  return del(['assets/js/project.js', 'assets/js/*.min.js']);
 });
 
 /**
@@ -217,8 +217,8 @@ gulp.task('uglify', ['concat'], function() {
     return gulp.src(paths.scripts)
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify({
-      mangle: false
-  }))
+        mangle: false
+    }))
     .pipe(gulp.dest('assets/js'));
 });
 
