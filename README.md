@@ -35,7 +35,9 @@
 ;;;;      ;;;; ;;;;;;;:   ,;;; :;;;      ;;;; ;;;;:;;;;;;; 
  ;;;;:..:;;;;` ;;;:;;;;   ,;;;  ;;;;:..:;;;;` ;;;;  ;;;;;; 
   :;;;;;;;;;   ;;;. ;;;;. ,;;;   :;;;;;;;;;   ;;;;   `;;;; 
-===
+  
+----------------------------------------------------------
+----------------------------------------------------------
 
 [Orion Group](http://webdevstudios.com)'s fork of WebDevStudios [wd_s](https://github.com/WebDevStudios/wd_s). Used as our new project theme boilerplate. Pull requests are welcome!
 
