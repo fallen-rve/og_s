@@ -51,7 +51,7 @@ function og_s_scripts() {
 	$version = '1.0.0';
 
 	/**
-	 * Should we load minified scripts? Also enqueue live reload to allow for extensionless reloading.
+	 * Should we load minified files?
 	 */
 	$suffix = '.min';
 	if ( true === $debug ) {
@@ -116,13 +116,13 @@ endif;
 /**
  * Add SVG definitions to <head>.
  */
-function og_s_include_svg_definitions() {
+function og_s_include_svg_icons() {
 
 	// Define SVG sprite file.
-	$svg_defs = get_template_directory() . '/assets/images/svg-defs.svg';
+	$svg_icons = get_template_directory() . '/assets/images/svg-icons.svg';
 
 	// If it exists, include it.
-	if ( file_exists( $svg_defs ) ) {
-		require_once( $svg_defs );
+	if ( file_exists( $svg_icons ) ) {
+		require_once( $svg_icons );
 	}
 }
