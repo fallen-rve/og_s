@@ -17,6 +17,7 @@
 Basic knowledge of the command line and the following dependencies are required to use wd_s:
 
 * [Node](http://nodejs.org/)
+* [Gulp CLI](https://github.com/gulpjs/gulp-cli) `npm install -g gulp-cli`
 
 # Installation
 
