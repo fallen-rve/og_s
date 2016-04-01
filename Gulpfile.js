@@ -189,7 +189,7 @@ gulp.task('spritesmith', function() {
  * Delete scripts before we concat and minify
  */
 gulp.task('clean:scripts', function() {
-  return del(['assets/js/project.js', 'assets/js/*.min.js']);
+    return del(['assets/js/project.js', 'assets/js/*.min.js']);
 });
 
 /**
