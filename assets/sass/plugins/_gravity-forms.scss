@@ -40,7 +40,7 @@ $gf-input-padding: $padding-input;
 //--------------------------------------------------------------
 //  BASE STYLES
 //--------------------------------------------------------------
-.gform_wrapper { // the entire form
+#content .gform_wrapper { // the entire form
     background: $gf-bg; // background for the form
     border: $gf-border-width solid $gf-border-color; // outer form border
     margin-right: 0 !important; // allow for full width of containing element
@@ -83,7 +83,13 @@ $gf-input-padding: $padding-input;
     textarea {
         background: $gf-input-color-background;
         padding: $gf-input-padding !important;
+        width: 100%;
+
+        @include breakpoint(small) {
+            width: 49%;
+        }
     }
+    
 
     // Default Drop-Down (Select) Field
     // Feel free to change the svg icon being used
@@ -127,54 +133,17 @@ $gf-input-padding: $padding-input;
 }
 
 //--------------------------------------------------------------
-//  BASE LAYOUT
-//  One Column
-//--------------------------------------------------------------
-.gform_wrapper .gform_body .gform_fields .gfield {
-
-    // Standard fields
-    input[type="text"],
-    input[type="url"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="number"],
-    input[type="password"],
-    input[type="file"],
-    textarea {
-        width: 100% !important;
-
-        @include breakpoint(small) {
-            width: 49% !important;
-        }
-    }
-
-    textarea {
-        width: 100% !important;
-    }
-
-    // Default Drop-Down (Select) Field
-    // Feel free to change the svg icon being used
-    select {
-        width: 100% !important;
-
-        @include breakpoint(small) {
-            width: 49% !important;
-        }
-    }
-}
-
-//--------------------------------------------------------------
 //  TWO COLUMN LAYOUT
 //--------------------------------------------------------------
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half,
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half {
+#content .gform_wrapper .gfield,
+#content .gform_wrapper .gfield {
 
     &.gf_left_half,
     &.gf_right_half {
-        width: 100% !important;
+        width: 100%;
 
         @include breakpoint(small) {
-            width: 49% !important;
+            width: 49%;
         }
 
         // Inputs
@@ -185,11 +154,11 @@ $gf-input-padding: $padding-input;
         input[type="number"],
         input[type="password"],
         input[type="file"] {
-            width: 100% !important;
+            width: 100%;
 
-            @include breakpoint(small) {
-                width: 100% !important;
-            }
+            // @include breakpoint(small) {
+            //     width: 100% !important;
+            // }
         }
     }
 
@@ -197,7 +166,7 @@ $gf-input-padding: $padding-input;
     &.gf_left_half {
 
         @include breakpoint(small) {
-            margin-right: 2% !important;
+            margin-right: 2%;
         }
     }
 }
@@ -213,7 +182,7 @@ $gf-input-padding: $padding-input;
 //--------------------------------------------------------------
 //  CHOSEN SELECT
 //--------------------------------------------------------------
-.gform_wrapper .gform_body .gform_fields .gfield {
+#content .gform_wrapper .gfield {
 
     // Containing div
     .chosen-container-single {
@@ -266,7 +235,7 @@ $gf-input-padding: $padding-input;
 //  ADVANCED FIELDS
 //  https://www.gravityhelp.com/documentation/article/css-targeting-examples/#advanced-fields
 //--------------------------------------------------------------
-.gform_wrapper .gform_body .gform_fields .gfield {
+#content .gform_wrapper .gfield {
 
     // Advanced Field Container
     & .ginput_complex {
@@ -289,7 +258,7 @@ $gf-input-padding: $padding-input;
 
                 // Text inputs
                 input[type="text"] {
-                    width: 100% !important;
+                    width: 100%;
                 }
             }
 
@@ -317,7 +286,7 @@ $gf-input-padding: $padding-input;
         select,
         .ginput_right select {
             line-height: 1.45;
-            width: 100% !important;
+            width: 100%;
         }
     }
 
@@ -328,12 +297,12 @@ $gf-input-padding: $padding-input;
 
         // Hour / Minute input
         input {
-            width: 70% !important;
+            width: 70%;
         }
 
         // AM / PM select
         select {
-            width: rem-calc(75) !important;
+            width: rem-calc(75);
         }
     }
 }
