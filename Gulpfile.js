@@ -120,6 +120,13 @@ gulp.task('cssnano', ['postcss'], function() {
 });
 
 /**
+ * Delete the svg-icons.svg before we minify, concat
+ */
+gulp.task('clean:icons', function() {
+    return del(['assets/images/svg-icons.svg']);
+});
+
+/**
  * Minify, concatenate, and clean SVG icons.
  *
  * https://www.npmjs.com/package/gulp-svgmin
