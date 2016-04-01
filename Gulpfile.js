@@ -133,7 +133,7 @@ gulp.task('clean:icons', function() {
  * https://www.npmjs.com/package/gulp-svgstore
  * https://www.npmjs.com/package/gulp-cheerio
  */
-gulp.task('svg', function() {
+gulp.task('svg', ['clean:icons'], function() {
     return gulp.src(paths.icons)
     .pipe(plumber({ errorHandler: handleErrors }))
     .pipe(svgmin())
@@ -283,13 +283,6 @@ gulp.task('watch', function() {
     gulp.watch(paths.sprites, ['sprites']);
 });
 
-/**
- * Delete compiled files.
- */
-gulp.task('clean:icons', function() {
-    return del(['assets/images/svg-icons.svg']);
-});
-
 gulp.task('clean:styles', function() {
     return del(['style.css', 'style.min.css']);
 });
@@ -309,5 +302,6 @@ gulp.task('i18n', ['clean:pot','wp-pot']);
 gulp.task('icons', ['clean:icons', 'svg']);
 gulp.task('styles', ['clean:styles', 'postcss', 'cssnano', 'sass:lint']);
 gulp.task('scripts', ['clean:scripts', 'uglify']);
+gulp.task('icons', ['svg']);
 gulp.task('sprites', ['imagemin', 'spritesmith']);
 gulp.task('default', ['i18n','icons', 'styles', 'scripts', 'sprites']);
