@@ -4272,16 +4272,16 @@ big {
 .comment-content,
 .widget-title,
 .widget {
-  word-wrap: break-word;
   word-break: keep-all;
+  word-wrap: break-word;
 }
 
 /* line 7, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/base/_accessibility.scss */
 .screen-reader-text {
   height: auto;
-  width: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
+  width: 0.0625rem;
+  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+  height: 0.0625rem;
   overflow: hidden;
   position: absolute !important;
 }
@@ -4292,7 +4292,7 @@ big {
   width: auto;
   background-color: #f1f1f1;
   border-radius: 0;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0.125rem 0.125rem rgba(0, 0, 0, 0.6);
   clip: auto !important;
   color: #2199e8;
   display: block;
@@ -4694,8 +4694,8 @@ body.ready .not-ready {
 
 /* line 75, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_navigation.scss */
 .menu.menu-vertical a {
-  padding: 0.625rem;
   border-bottom: 1px solid #cccccc;
+  padding: 0.625rem;
 }
 
 /* line 84, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_navigation.scss */
@@ -4811,14 +4811,14 @@ body.ready .not-ready {
   clear: both;
 }
 
-/* line 41, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_content.scss */
+/* line 40, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_content.scss */
 .edit-link,
 .tags-links,
 .cat-links {
   margin: 0 1.5rem;
 }
 
-/* line 49, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_content.scss */
+/* line 48, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_content.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -4839,11 +4839,11 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  -webkit-appearance: none;
   background-color: #2199e8;
   border: none;
   min-height: 1.9375rem;
   color: #fff;
-  -webkit-appearance: none;
 }
 
 /* line 24, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_forms.scss */
@@ -4904,11 +4904,15 @@ input[type="search"],
 input[type="tel"],
 input[type="number"],
 textarea {
-  line-height: 1.45;
   -webkit-appearance: none;
+  color: #666666;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  line-height: 1.45;
+  padding: rem(3) rem(5);
 }
 
-/* line 71, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_forms.scss */
+/* line 75, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_forms.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -4920,7 +4924,7 @@ textarea:focus {
   color: #111111;
 }
 
-/* line 76, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_forms.scss */
+/* line 80, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_forms.scss */
 textarea {
   height: auto;
   width: 100%;
@@ -4950,7 +4954,7 @@ textarea {
   float: left;
 }
 
-/* line 24, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_comments.scss */
+/* line 23, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/modules/_comments.scss */
 .bypostauthor {
   display: block;
 }
@@ -5165,137 +5169,78 @@ textarea {
   display: block;
 }
 
-/* line 43, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper {
+/* line 44, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper {
   background: #ffffff;
   border: 0 solid #ffffff;
-  margin-right: 0 !important;
-  max-width: 100% !important;
   padding: 0;
 }
 
-/* line 51, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield,
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half,
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half {
+/* line 50, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper .gform_body .gform_fields .gfield,
+#content .gform_wrapper .gform_body .gform_fields .gfield.gf_left_half,
+#content .gform_wrapper .gform_body .gform_fields .gfield.gf_right_half {
   margin-bottom: 1.5625rem;
 }
 
-/* line 64, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gfield_label {
+/* line 57, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper .gfield_label {
   color: #333333;
   font-size: 1rem;
   font-weight: 700;
 }
 
-/* line 76, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper input[type="text"],
-.gform_wrapper input[type="url"],
-.gform_wrapper input[type="email"],
-.gform_wrapper input[type="tel"],
-.gform_wrapper input[type="number"],
-.gform_wrapper input[type="password"],
-.gform_wrapper input[type="file"],
-.gform_wrapper textarea {
+/* line 69, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper input[type="text"],
+#content .gform_wrapper input[type="url"],
+#content .gform_wrapper input[type="email"],
+#content .gform_wrapper input[type="tel"],
+#content .gform_wrapper input[type="number"],
+#content .gform_wrapper input[type="password"],
+#content .gform_wrapper input[type="file"],
+#content .gform_wrapper textarea {
   background: #ffffff;
-  padding: 0.1875rem 0.3125rem !important;
 }
 
-/* line 90, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper select {
+/* line 80, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper textarea {
+  width: 100%;
+}
+
+/* line 86, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper select {
   background: url(assets/images/svg-icons/caret-down.svg) no-repeat 97% transparent;
   background-color: #ffffff;
   background-size: 0.75rem;
   border-color: #cccccc;
   border-radius: 0;
   line-height: 1.45;
-  margin-left: 0 !important;
   padding: 0.1875rem 0.3125rem;
   -webkit-appearance: none;
+  width: 100%;
+  width: 49%;
 }
 
 /* line 103, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper select[multiple="multiple"] {
+#content .gform_wrapper select[multiple="multiple"] {
   background: #ffffff;
 }
 
-/* line 136, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield input[type="url"],
-.gform_wrapper .gform_body .gform_fields .gfield input[type="email"],
-.gform_wrapper .gform_body .gform_fields .gfield input[type="tel"],
-.gform_wrapper .gform_body .gform_fields .gfield input[type="number"],
-.gform_wrapper .gform_body .gform_fields .gfield input[type="password"],
-.gform_wrapper .gform_body .gform_fields .gfield input[type="file"],
-.gform_wrapper .gform_body .gform_fields .gfield textarea {
+/* line 138, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+.gform_wrapper .gform_body .gform_fields .gfield select,
+.gform_wrapper.gf_browser_chrome .gform_body .gform_fields .gfield select {
+  margin-left: 0;
   width: 100% !important;
   width: 49% !important;
 }
 
 /* line 151, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield textarea {
-  width: 100% !important;
-}
-
-/* line 157, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield select {
-  width: 100% !important;
-  width: 49% !important;
-}
-
-/* line 172, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_left_half, .gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_right_half,
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_left_half,
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_right_half {
-  width: 100% !important;
-  width: 49% !important;
-}
-
-/* line 181, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_left_half input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_left_half input[type="url"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_left_half input[type="email"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_left_half input[type="tel"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_left_half input[type="number"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_left_half input[type="password"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_left_half input[type="file"], .gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_right_half input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_right_half input[type="url"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_right_half input[type="email"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_right_half input[type="tel"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_right_half input[type="number"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_right_half input[type="password"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_right_half input[type="file"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_left_half input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_left_half input[type="url"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_left_half input[type="email"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_left_half input[type="tel"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_left_half input[type="number"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_left_half input[type="password"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_left_half input[type="file"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_right_half input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_right_half input[type="url"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_right_half input[type="email"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_right_half input[type="tel"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_right_half input[type="number"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_right_half input[type="password"],
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_right_half input[type="file"] {
-  width: 100% !important;
-  width: 100% !important;
-}
-
-/* line 197, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield.gf_left_half.gf_left_half,
-.gform_wrapper .gform_body .gform_fields .gfield.gf_right_half.gf_left_half {
-  margin-right: 2% !important;
-}
-
-/* line 219, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .chosen-container-single {
+.gform_wrapper .gfield .chosen-container-single {
   font-size: 1rem;
 }
 
-/* line 223, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .chosen-container-single .chosen-single {
+/* line 155, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+.gform_wrapper .gfield .chosen-container-single .chosen-single {
   background: #ffffff;
   border-color: #cccccc;
   border-radius: 0;
@@ -5303,8 +5248,8 @@ textarea {
   padding: 0.1875rem 0.3125rem;
 }
 
-/* line 232, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .chosen-container-single .chosen-single div b {
+/* line 164, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+.gform_wrapper .gfield .chosen-container-single .chosen-single div b {
   position: absolute;
   top: 40% 0.6875rem;
   content: '';
@@ -5318,19 +5263,23 @@ textarea {
   background: none;
 }
 
-/* line 243, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .chosen-container-single .chosen-drop .chosen-search input[type="text"] {
+/* line 175, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+.gform_wrapper .gfield .chosen-container-single .chosen-drop .chosen-search input[type="text"] {
   background: none;
-  width: 100% !important;
 }
 
-/* line 249, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .chosen-container-single .chosen-drop .chosen-results li {
+/* line 180, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+.gform_wrapper .gfield .chosen-container-single .chosen-drop .chosen-results li {
   padding: 0.625rem 0.3125rem;
 }
 
-/* line 257, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .chosen-container-single.chosen-container-single.chosen-with-drop .chosen-single div b {
+/* line 188, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+.gform_wrapper .gfield .chosen-container-single.chosen-container-single.chosen-with-drop .chosen-single {
+  background-image: none;
+}
+
+/* line 192, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+.gform_wrapper .gfield .chosen-container-single.chosen-container-single.chosen-with-drop .chosen-single div b {
   border: none;
   content: '';
   display: block;
@@ -5342,63 +5291,66 @@ textarea {
   border-top-width: 0;
 }
 
-/* line 279, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .ginput_left,
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .ginput_right,
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .name_first,
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .name_last, .gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .ginput_left,
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .ginput_right,
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .name_first,
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .name_last {
-  padding-right: 0;
+/* line 202, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper {
+  margin-right: 0;
+  max-width: 100%;
+}
+
+/* line 207, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper input[type="text"],
+#content .gform_wrapper input[type="url"],
+#content .gform_wrapper input[type="email"],
+#content .gform_wrapper input[type="tel"],
+#content .gform_wrapper input[type="number"],
+#content .gform_wrapper input[type="password"],
+#content .gform_wrapper input[type="file"],
+#content .gform_wrapper textarea {
+  padding: 0.1875rem 0.3125rem;
   width: 100%;
   width: 49%;
 }
 
-/* line 291, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .ginput_left input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .ginput_right input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .name_first input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .name_last input[type="text"], .gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .ginput_left input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .ginput_right input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .name_first input[type="text"],
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .name_last input[type="text"] {
-  width: 100% !important;
+/* line 223, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper .chosen-search input[type="text"],
+#content .gform_wrapper textarea {
+  width: 100%;
 }
 
-/* line 297, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .ginput_left,
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .name_first, .gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .ginput_left,
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .name_first {
-  float: left;
+/* line 240, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper .gf_left_half,
+#content .gform_wrapper .gf_right_half {
+  width: 100%;
+  width: 49%;
+}
+
+/* line 249, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper .gf_left_half input[type="text"],
+#content .gform_wrapper .gf_left_half input[type="url"],
+#content .gform_wrapper .gf_left_half input[type="email"],
+#content .gform_wrapper .gf_left_half input[type="tel"],
+#content .gform_wrapper .gf_left_half input[type="number"],
+#content .gform_wrapper .gf_left_half input[type="password"],
+#content .gform_wrapper .gf_left_half input[type="file"],
+#content .gform_wrapper .gf_right_half input[type="text"],
+#content .gform_wrapper .gf_right_half input[type="url"],
+#content .gform_wrapper .gf_right_half input[type="email"],
+#content .gform_wrapper .gf_right_half input[type="tel"],
+#content .gform_wrapper .gf_right_half input[type="number"],
+#content .gform_wrapper .gf_right_half input[type="password"],
+#content .gform_wrapper .gf_right_half input[type="file"] {
+  width: 100%;
+}
+
+/* line 264, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper .gf_left_half {
   margin-right: 2%;
 }
 
-/* line 307, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_name .ginput_right, .gform_wrapper .gform_body .gform_fields .gfield .ginput_complex.ginput_container_address .ginput_right {
-  margin-left: 0;
-  margin-left: 1.6%;
-}
-
-/* line 317, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex select,
-.gform_wrapper .gform_body .gform_fields .gfield .ginput_complex .ginput_right select {
-  line-height: 1.45;
-  width: 100% !important;
-}
-
-/* line 330, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .gfield_time_hour input,
-.gform_wrapper .gform_body .gform_fields .gfield .gfield_time_minute input,
-.gform_wrapper .gform_body .gform_fields .gfield .gfield_time_ampm input {
-  width: 70% !important;
-}
-
-/* line 335, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
-.gform_wrapper .gform_body .gform_fields .gfield .gfield_time_hour select,
-.gform_wrapper .gform_body .gform_fields .gfield .gfield_time_minute select,
-.gform_wrapper .gform_body .gform_fields .gfield .gfield_time_ampm select {
-  width: 4.6875rem !important;
+/* line 275, /home/ryan/Orion/BaseVM/og-base-centos/projects/sites/themes.dev/www/wp-content/themes/og_s_staging/assets/sass/plugins/_gravity-forms.scss */
+#content .gform_wrapper .ginput_complex .name_first input[type="text"],
+#content .gform_wrapper .ginput_complex .name_last input[type="text"] {
+  width: 100%;
 }
 
 /******************************************************************
