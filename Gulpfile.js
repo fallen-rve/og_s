@@ -240,16 +240,16 @@ gulp.task('wp-pot', function () {
 /**
  * Sass linting
  */
-gulp.task('sass:lint', function () {
+gulp.task('sass:lint', ['cssnano'], function () {
     gulp.src([
         'assets/sass/**/*.scss',
         '!assets/sass/base/_normalize.scss',
         '!assets/sass/utilities/animate/**/*.*',
         '!assets/sass/base/_sprites.scss'
     ])
-        .pipe(sassLint())
-        .pipe(sassLint.format())
-        .pipe(sassLint.failOnError())
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError());
 });
 
 /**
